@@ -1,0 +1,79 @@
+.vuebar-element {
+    height: 400px;
+    width: 100%;
+    max-width: 100%;
+    background: transparent;
+}
+.vb > .vb-dragger {
+    z-index: 5;
+    width: 4px;
+    right: 0;
+    /*margin-top: 26px;*/
+    margin-top: 0;
+}
+.vb > .vb-dragger > .vb-dragger-styler {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: rotate3d(0,0,0,0);
+    transform: rotate3d(0,0,0,0);
+    -webkit-transition:
+    background-color 100ms ease-out,
+    margin 100ms ease-out,
+    height 100ms ease-out;
+    transition:
+    background-color 100ms ease-out,
+    margin 100ms ease-out,
+    height 100ms ease-out;
+    background-color: rgb(236, 92, 40);
+    margin: 0;
+    border-radius: 50px;
+    /*height: calc(100% - 26px);*/
+    height: calc(100%);
+    display: block;
+}
+
+.vb.vb-scrolling-phantom > .vb-dragger > .vb-dragger-styler {
+    background-color: rgb(236, 92, 40);
+}
+
+.vb > .vb-dragger:hover > .vb-dragger-styler {
+    background-color: rgb(236, 92, 40);
+    margin: 0px;
+    width: 8px;
+}
+
+.vb.vb-dragging > .vb-dragger > .vb-dragger-styler {
+    background-color: rgb(236, 92, 40);
+    margin: 0px;
+    width: 8px;
+}
+
+/*.vb > .vb-dragger:hover {
+    -webkit-transition:
+    width 8px ease-out;
+    transition:
+    width 8px ease-out;
+}
+
+.vb.vb-dragging > .vb-dragger {
+    -webkit-transition:
+    width 8px ease-out;
+    transition:
+    width 8px ease-out;
+}*/
+.vb > .vb-dragger:hover {
+    width: 8px;
+}
+
+.vb.vb-dragging > .vb-dragger {
+    width: 8px;
+}
+.vb.vb-dragging-phantom > .vb-dragger > .vb-dragger-styler {
+    background-color: rgb(236, 92, 40);
+}
+
+@media(max-width: 767px) {
+    .vb > .vb-dragger > .vb-dragger-styler {
+        background-color: transparent;
+    }
+}

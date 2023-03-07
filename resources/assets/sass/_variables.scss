@@ -1,0 +1,41 @@
+// Colors
+$white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
+$gray: rgb(128, 128, 128);
+$dark-gray: rgb(107, 107, 107);
+$light-gray: rgb(94, 100, 106);
+$white-gray: rgb(205, 205, 205);
+$main-gray: rgb(51, 56, 61);
+$modal-gray: rgb(60, 66, 73);
+$border-gray: rgb(74, 76, 76);
+$border-gray-light: rgb(83, 93, 105);
+$text-color-gray: rgb(136, 132, 132);
+$red: rgb(255, 0, 0);
+$light-red: rgb(210, 0, 0);
+$white-red: rgba(234, 143, 142, 1);
+$green: rgb(0, 128, 0);
+$light-green: rgb(92, 184, 92);
+$yellow: rgb(255, 255, 0);
+$dark-yellow: rgb(236, 220, 3);
+$orange: rgb(228, 77, 38);
+$light-orange: rgb(236, 92, 40);
+$white-orange: rgb(247, 170, 142);
+$blue: rgb(51, 122, 183);
+
+// Gradients Colors
+$main-bg-left: $black;
+$main-bg-right: rgb(80, 80, 80);
+$box-bg-left: rgba(111, 115, 119, 0.6);
+$box-bg-right: rgba(43, 54, 66, 0.6);
+
+// Table Gradients
+$table-header-bg-left: rgb(111, 115, 119);
+$table-header-bg-right: rgb(43, 54, 66);
+$table-od-bg-left: $box-bg-right;
+$table-od-bg-left: $box-bg-left;
+
+// Typography
+$font-family-base: Arial, Helvetica, sans-serif;
+$font-size-base: 14px;
+$line-height-base: initial;
+$text-color-base: $white;

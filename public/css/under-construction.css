@@ -1,0 +1,261 @@
+#ui {
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    margin: -60px 0 0 -70px;
+    filter: drop-shadow(2px 3px 1px rgb(28, 29, 30));
+    z-index: 0;
+}
+.right-block-comming-soon {
+    top: 215px !important;
+}
+#ui .primary {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: 0;
+    background: black;
+    border-radius: 999px;
+    transition: 400ms cubic-bezier(0.19, 1, 0.22, 1);
+    animation: primaryRotate 6000ms linear infinite;
+}
+#ui .primary::before {
+    content: "";
+    position: absolute;
+    top: 33px;
+    left: 33px;
+    width: 45px;
+    height: 45px;
+    border: 5px dotted #000;
+    background: #222224;
+    border-radius: 999px;
+    animation: secondaryRotate 1000ms linear infinite;
+}
+#ui .primary::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 40px;
+    height: 40px;
+    border: 2px dotted #000;
+    background: #c4331c;
+    border-radius: 999px;
+    box-sizing: border-box;
+}
+#ui .primary .gear {
+    position: absolute;
+    top: 42px;
+    left: -8px;
+    width: 116px;
+    height: 16px;
+    background: black;
+    border-radius: 3px;
+}
+#ui .primary .gear:nth-child(1) {
+    transform: rotateZ(0deg);
+}
+#ui .primary .gear:nth-child(2) {
+    transform: rotateZ(30deg);
+}
+#ui .primary .gear:nth-child(3) {
+    transform: rotateZ(60deg);
+}
+#ui .primary .gear:nth-child(4) {
+    transform: rotateZ(90deg);
+}
+#ui .primary .gear:nth-child(5) {
+    transform: rotateZ(120deg);
+}
+#ui .primary .gear:nth-child(6) {
+    transform: rotateZ(150deg);
+}
+#ui .primary .gear:nth-child(7) {
+    transform: rotateZ(180deg);
+}
+#ui .primary .gear:nth-child(8) {
+    transform: rotateZ(210deg);
+}
+#ui .secondary {
+    position: absolute;
+    top: 84px;
+    left: 84px;
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 999px;
+    transition: 400ms cubic-bezier(0.19, 1, 0.22, 1);
+    animation: secondaryRotate 4000ms linear infinite;
+}
+#ui .secondary::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background: #222224;
+    border-radius: 999px;
+}
+#ui .secondary::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+    border: 1px dotted #000;
+    background: #c4331c;
+    border-radius: 999px;
+    box-sizing: border-box;
+}
+#ui .secondary .gear {
+    position: absolute;
+    top: 20px;
+    left: -8px;
+    width: 66px;
+    height: 10px;
+    background: black;
+    border-radius: 3px;
+}
+#ui .secondary .gear:nth-child(1) {
+    transform: rotateZ(3deg);
+}
+#ui .secondary .gear:nth-child(2) {
+    transform: rotateZ(48deg);
+}
+#ui .secondary .gear:nth-child(3) {
+    transform: rotateZ(93deg);
+}
+#ui .secondary .gear:nth-child(4) {
+    transform: rotateZ(138deg);
+}
+#ui.switch .primary {
+    margin-top: 0;
+}
+#ui.switch .secondary {
+    animation: secondaryRotate 4000ms linear infinite;
+}
+.no-padding {
+    padding-right: 0 !important;
+}
+div.tab-content > section:nth-child(2) {
+    padding-top: 0;
+}
+
+@keyframes primaryRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes secondaryRotate {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.modal-dialog {
+    margin: 80px auto;
+}
+
+
+.under-construction-p1 {
+    font-size: 14px; 
+    color: #eb5c28; 
+    padding: 10px 0 0 0;
+}
+.under-construction-p2 {
+    font-size: 13px; 
+    color: #6b6b6b;
+    padding: 0px 15px 30px 15px;
+}
+.under-construction-p3 {
+    margin: 5px; 
+    font-size: 12px; 
+    color: #ffffff; 
+    padding: 130px 10px 0 10px;
+}
+.under-construction-p4 {
+    margin-bottom: 20px; 
+    font-size: 12px; 
+    color: #ffffff; 
+    padding: 0 10px 0 10px;
+}
+.under-construction-p5 {
+    font-size: 11px; 
+    color: #ffffff; 
+    padding: 0 0 0 0;
+}
+.under-construction-p6 {
+    font-size: 11px; 
+    color: #ffffff; 
+    padding: 0 0 0 0;
+}
+.under-construction-p7 {
+    font-size: 11px; 
+    color: #ffffff; 
+    padding: 0 0 0 0;
+}
+.under-construction-a1 {
+    color: #eb5c28 !important; 
+    font-size: 11px;
+}
+
+
+
+
+
+@media (max-height: 600px) and (min-width: 767px) {
+    #ui {
+        display: none;
+    }
+    .tab-content > section:nth-child(1) > p:nth-child(3), 
+    .tab-content > section:nth-child(2) > p:nth-child(3),
+    .tab-content > section:nth-child(3) > p:nth-child(3) {
+        padding: 0 10px 0px !important;
+    }
+}
+
+@media (max-height: 480px) {
+    .tab-content > section:nth-child(1) > p.desktop,
+    .tab-content > section:nth-child(2) > p.desktop,
+    .tab-content > section:nth-child(3) > p.desktop {
+        padding: 0px 15px 0 !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .modal-dialog {
+        margin: 60px auto;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    body > div > div.main-content.row > p:nth-child(4) {
+        font-size: 16px !important;
+    }
+    body {
+        background: rgb(0,0,0);
+        background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%,rgb(91, 92, 95) 100%);
+        background: -webkit-linear-gradient(left, rgba(0,0,0,1)0%,rgb(91, 92, 95) 100%);
+        background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgb(91, 92, 95) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#6b7077',GradientType=1 );
+    }
+}
+
+@media (max-width: 321px) {
+    body > div > div.main-content.row > p:nth-child(4) {
+        font-size: 14px !important;
+    }
+    body > div > div.main-content.row > p:nth-child(4) {
+        padding: 135px 0 10px 0 !important;
+    }
+}

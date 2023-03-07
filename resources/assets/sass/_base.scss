@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+    display: block;
+}
+::-webkit-input-placeholder { 
+    color: $white-gray;
+}
+::-moz-placeholder { 
+    color: $white-gray;
+}
+:-ms-input-placeholder { 
+    color: $white-gray;
+}
+:-moz-placeholder {
+    color: $white-gray;
+}
+body {
+    background: $black;
+    background: -moz-linear-gradient(left, $main-bg-left 0%, $main-bg-right 100%);
+    background: -webkit-linear-gradient(left, $main-bg-left 0%, $main-bg-right 100%);
+    background: linear-gradient(to right, $main-bg-left 0%, $main-bg-right 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$main-bg-left', endColorstr='$main-bg-right',GradientType=1 );
+    height: 100%;
+    min-height: 300px;
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    color: $text-color-base;
+    text-align: center;
+    overflow: hidden;
+}

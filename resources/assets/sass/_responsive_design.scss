@@ -1,0 +1,303 @@
+/******************** Responsive Design *********************/
+@media (min-width: 1367px) {
+    ::-webkit-scrollbar { 
+        display: none; 
+    }
+}
+
+@media (max-width: 1366px) {
+    ::-webkit-scrollbar { 
+        display: none; 
+    }
+}
+
+@media (max-width: 1130px) {
+    .tab {
+        font-size: 11px !important;
+    }
+    .vue-tabs .nav > li > a {
+        padding: 15px 12px !important;
+    }
+}
+
+@media (max-width: 1105px) {
+    .fa-facebook-square,
+    .fa-google-plus-square,
+    .fa-twitter-square,
+    .fa-youtube-square,
+    .fa-instagram,
+    .fa-linkedin-square,
+    .fa-envelope-square {
+        font-size: 25px !important;
+        margin-top: 10px;
+    }
+    ::-webkit-scrollbar { 
+        display: none; 
+    }
+}
+
+@media (max-width: 1023px) {
+    .roadmaps-calendar-table-container th:nth-child(2),
+    .roadmaps-calendar-table-container td:nth-child(2) {
+        display: none;
+    }
+    .tab {
+        font-size: 10px !important;
+    }
+    .vue-tabs .nav > li > a {
+        padding: 15px 10px !important;
+    }
+    #t-team::after, 
+    #t-mining::after, 
+    #t-trading::after, 
+    #t-airdrops::after, 
+    #t-statistics::after, 
+    #t-forum::after {
+        width: 4px;
+        height: 4px;
+        top: 5px;
+        right: 4px;
+    }                                       
+}
+
+@media (max-width: 900px) and (min-width: 768px) {
+    .main-calendar-table-container th:nth-child(5),
+    .main-calendar-table-container td:nth-child(6) {
+        display: none;
+    }
+    .vue-tabs .nav > li > a {
+        padding: 15px 5px !important;
+    }
+    #t-team::after, 
+    #t-mining::after, 
+    #t-trading::after, 
+    #t-airdrops::after, 
+    #t-statistics::after, 
+    #t-forum::after {
+        right: 1px;
+    }          
+}
+
+@media (max-width: 820px) {
+    .btn-group-sm>.btn, .btn-sm {
+        padding: 0px 3px;
+    }
+    .the-event-footer {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1010px) and (min-width: 768px) {
+    .table-condensed > thead > tr > th {
+        font-size: 10px;
+    }
+    .ico-full-name {
+        font-size: 10px;
+    }
+    .city-location {
+        font-size: 10px;
+    }
+    .country-location {
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .event-category {
+        font-size: 10px;
+    }
+    .date {
+        font-size: 10px;
+    }
+    .date-year {
+        font-size: 10px;
+        font-weight: bold;
+    }
+    td > img {
+        max-width: 12px;
+    }
+}
+
+@media (max-width: 845px) and (min-width: 768px) {
+    .table > tbody > tr > td {
+        padding: 3px;
+    }
+}
+
+@media (max-width: 786px) {
+    .info-section li {
+        padding: 5px 0 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .table-condensed > thead > tr > th,
+    .table-condensed > tbody > tr > td {
+        padding: 0;
+    }
+    #upcomming-table-container th:nth-child(3) {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    #upcomming-table-container td:nth-child(4) {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        overflow: visible;
+    }
+    .footer > div {
+        height: 20px;
+    }
+    .credit,
+    .social-icons {
+        display: none;
+    }
+    .mobile-credit {
+        display: block;
+    }
+    .social-icons-mobile {
+        padding-bottom: 10px;
+    }
+    .footer > div > p,
+    .info-section > ul > li,
+    .footer-credit {
+        text-align: center;
+    }
+    .footer-credit {
+        display: none;
+    }
+    .social-icons {
+        text-align: left;
+    }
+    .footer .logo {
+        display: none;
+    }
+    .header {
+        display: block;
+    }
+    .footer-credit-btn-title {
+        color: $dark-gray;
+        margin: 0;
+        padding: 0 0 0 20px;
+        text-align: left;
+    }
+
+    .footer-menu-icon > i {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 5px;
+        color: $light-orange;
+        font-size: 30px !important;
+    }
+    
+
+    .main-box-calendar {
+        animation-name: none;
+        padding-right: 15px;
+    }
+    .main-box-forum {
+        animation-name: none;
+    }
+    .footer {
+        animation-name: none;
+        margin-top: 10px;
+    }
+    .footer-menu {
+        float: none !important;
+        text-align: center;
+        padding-bottom: 10px;
+        margin: -9px 0 0 0;
+        display: none;
+    }
+    .social-icons {
+        float: none;
+        text-align: center;
+    }
+
+    
+    .main-box-calendar-content {
+        display: none;
+        animation-name: none;
+    }
+    .mobile-credit > div {
+        margin: 0;
+    }
+    .header > .logo > h3 {
+        font-size: 20px;
+        padding: 12px 0 0 0;
+    }
+    .login-btn {
+        margin: 12px 0 0 10px;
+    }
+    .calendar-title, 
+    .coin-description-title, 
+    .coin-content-title, 
+    .main-box-forum > h1, 
+    .main-box-event > h1 {
+        margin-top: 15px;
+    }
+    .info-section {
+        display: none;
+    }
+    .mobile-menu-btn {
+        display: block;
+    }
+    .main-content {
+        top: 45px;
+        bottom: 20px;
+    }
+    .tabs-container {
+        background: #485563;
+        background: -webkit-linear-gradient(to right, $box-bg-left, $box-bg-right);
+        background: linear-gradient(to right, $box-bg-left, $box-bg-right);
+    }
+    
+
+    .search-box {
+        height: 20px;
+    }
+    .table-striped > thead > tr > th:nth-child(5) {
+        padding: 0 10px 0 10px;
+    }
+    .table-striped > tbody > tr > td:nth-child(6) {
+        padding-right: 0;
+    }
+    .tab {
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width: 469px) {
+   
+    .header-button-container > div {
+        width: 30px;
+    }
+    .fa-buttons-header {
+        font-size: 20px !important;
+        margin-top: 13px;
+    }
+    .header-button-container > div:nth-child(2)::after {
+        left: 30px;
+        bottom: 27px;
+        width: 6px;
+        height: 6px;
+    }
+}
+
+@media (max-width: 330px) {
+    .header > .logo > h3 {
+        font-size: 20px;
+    }
+    .login-btn {
+        margin: 15px 0 0 0;
+    }
+    header > div.logo.col-xs-9 {
+        width: 70%;
+    }
+    header > div.col-xs-3 {
+        width: 30%;
+    }
+}
